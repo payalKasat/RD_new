@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realdynamics-blog</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript,Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<script src=""></script>-->
+    <link rel="stylesheet" type="text/css" href="blog_page.css">
+</head>
+<body id="blog_page2 blog" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Real dynamics</a>
+            <img class="top_logo img-responsive" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+        </div>
+    </div>
+</nav>
+
+<div id="blog_content" class="container">
+    <div class="text-center">
+        <h2>BLOG</h2>
+    </div>
+    <div class="row blog_content_div">
+        <!--desktop blog view-->
+        <div class="row ">
+            <div class="col-sm-8 col-xs-12 blog_side">
+                <div class="blog2">
+                    <h5><img class="blog_header_img" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">What's new in Dynamics 365 for Operations (AX7) - Financials, Part 1</h5>
+                    <p>February 3, 2017|| Real Dynamics Team</p>
+                    <br>
+                    <p>AXUG Summit is always a great opportunity to learn Microsoft's vision for Dynamics products, and in the last cycle, Dynamics 365 in particular. We attended several sessions to learn what's coming in the Financials module, and was very impressed by the speed at which Microsoft is delivering new features in Dynamics 365 for Operations - Financials.</p>
+                    <p>We will summarize those enhancements in three articles. Part one will cover enhancements in:</p>
+                    <ul>
+                        <li>General Ledger</li>
+                        <li>Accounts Payable</li>
+                        <li>Fixed Assets</li>
+                    </ul>
+                    <p>Part two will focus upon:</p>
+                    <ul>
+                        <li>Accounts Receivables</li>
+                        <li>Credit & collections</li>
+                    </ul>
+                    <p>In part three, we will summarize the features of:</p>
+                    <ul>
+                        <li>Expense management</li>
+                        <li>Cash and Bank management</li>
+                        <li>Budgeting</li>
+                        <li>Financial reporting</li>
+                    </ul>
+
+                    <h2>General Ledger</h2>
+                    <p>Enhancements in GL continue to be centered around making life easy for enterprise customers, with support for running more processes without having to switch companies. This enables productivity gains in multi-company environments.</p>
+                    <p><strong>Foreign currency revaluation:</strong> Currency revaluation functionality from the Accounts Receivable and Accounts Payable modules are now extended to the General Ledger area.</p>
+                    <p>You can now process foreign currency revaluation for all companies and accounts at one time with the support of exchange rate types for main accounts and multi-company processing. Similar to exchange rate type defined for Management Reporter in the previous version, you can define exchange rate type on the Ledger account level in Chart of Account.</p>
+                    <p>Instead of selecting Range of Accounts and Range for Currencies, you can now multi-select the values and ranges.</p>
+                    <p>You can preview the results of the currency revaluation before posting. The history of currency revaluation runs can be seen from the periodic area along with the parameters that were selected at the time of running the process. If you are not satisfied with the results of posting, you can also reverse or cancel the voucher.</p>
+                    <p><strong>Year-end close:</strong> You don't have to switch legal entities for running year-end processes. You can group together companies with the same fiscal calendar and close settings and run the process for as many legal entities as needed with a single click. This feature will be big time saver for organizations having multiple legal entities.</p>
+                    <p><strong>Intercompany processing and multi-company general ledger:</strong> Intercompany setup can be managed from a single page, rather than having to setup in every legal entity. Create the reciprocal relationship if posting is allowed by a single click. You can also define one-way posting relationship (e.g. Legal entity A can post to B but not vice versa).</p>
+                    <img class="blog_img" src="blog_images/bl8.1.png" alt="REAL DYNAMICS" >
+                    <p><strong>Ease of journal entry:</strong> While entering account and dimension combinations, if only a single value is applicable, the system will use a default value rather than the user having to select it from the drop-down menu. The journal entry experience will be better for users entering journal entries manually.</p>
+                    <p><strong>Cost accounting module:</strong> A brand new module for cost accounting is being delivered with this release. More information about this module is available on the Microsoft Dynamics 365 for Operations Roadmap portal under Supply Chain enhancements.</p>
+
+                    <h2>Accounts Payable</h2>
+                    <p>Similar to General Ledger, Accounts Payable also has many enhancements that focus on productivity gain in enterprise environment.</p>
+                    <p><strong>Global invoice entry:</strong> With introduction of the Global Invoice Journal and the Vendor Invoices pages now support changing the legal entity during data entry. AP Invoicing clerks do not have to keep changing legal entities while invoice entry. A similar feature was implemented for GL Journals with AX7, and now similar functionality is extended to AP module.</p>
+                    <p><strong>Vendor collaboration invoicing workspace:</strong> Formerly known as the ‘Vendor Portal' that had usability issues due to the Enterprise portal and underlying technology now delivers a modern UI. The Vendor collaboration invoicing workspace allows an external vendor to securely access their own invoice information, such as whether an invoice has been paid, and submit their own invoices. This reduces the need for answering questions related to vendor payments, and allows an organization to engage its vendors in invoice entry - ultimately needing fewer resources in AP group.</p>
+                    <p><strong>Enhanced visibility of prepayment invoicing activity:</strong> The prepayments list page will provide better visibility into the status of prepayments throughout their lifecycle. Using this list page, you can get better visibility into POs needing prepayments (prepayments yet to be invoiced), prepayment invoices that need to be paid, and paid prepayment invoices that need to be applied to standard invoices. Additionally, there are enhancements for the automatic application of paid prepayment invoices to standard invoices that will reduce extra steps needed to apply prepayment invoices during the invoicing.</p>
+
+                    <p><strong>Electronic file support for the IRS 1099 Combined Federal/State filing program: </strong>When the US configuration key is enabled, the 1099 electronic filing process provides additional functionality that complies with the IRS regulations for the Combined Federal/State filing program. This program was established by the IRS to allow the IRS to electronically forward information returns to the participating states.</p>
+                    <p><strong>AP Payments enhancements:</strong> You can now select the same invoice for settlement on multiple unposted payments journal lines. In prior versions, you could select invoice for payment on only one unposted payment journal line at given point of time. Also, centralized payments functionality allows users to view past due invoices across companies that are part of a centralized payment organizational hierarchy.</p>
+                    <h2>Fixed Assets</h2>
+                    <p><strong>Value models and Depreciation books:</strong> Value models or Depreciation books are now merged into single entity are called Books. This simplifies overall concept, allows use of common set of journals, inquiries, reports and interfaces.</p>
+                    <p><strong>Cross company depreciation runs:</strong> You can now start a depreciation run for assets across all legal entities from a single page, instead of going to each legal entity creating journals and specifying parameters and selection criteria. You can optionally choose to automatically post the journals after they are created. Both creation and posting of the journals can be run in batch, allowing the depreciation to run in the background. This feature will be welcomed by Fixed asset accounts managing assets across multiple legal entities.</p>
+                    <h2>Key enhancements backported in Dynamics AX 2012 (included in CU11)</h2>
+                    <p>It's good to see new features being delivered in Dynamics 365.</p>
+                    <p>Better news is that some of the features are available for Dynamics AX 2012 customers as well. AX 2012 CU11 included:</p>
+                    <ul>
+                        <li>Global Journal entry form</li>
+                        <li>Mass Financial Period Close</li>
+                    </ul>
+                    <p>I covered these features in detail in the article "What's New in General Ledger in the New Microsoft Dynamics AX".</p>
+                    <h2>What's coming next</h2>
+                    <p>Microsoft plans to build Power BI reports for better visibility into Fixed Asset Management. Hopefully, these reports will mitigate the current gap of the visibility of asset depreciation forecast, the ability to run as-of-date fixed-asset balances report, and a true reconciliation report to tie acquisition, accumulated depreciation costs between the sub-ledger and General Ledger.</p>
+                    <p>For those who missed the conference, do look at the Microsoft is now providing much better visibility into their Product roadmap through Microsoft Dynamics 365 for Operations Roadmap portal.</p>
+                    <p>There you will find three tabs, being 1) What's New, 2) In Development and 3) Previously Released. Microsoft plans to provide frequent updates on In Development items in a more agile fashion. This approach validates Microsoft's promise of listening to customers and reacting to the feedback based on several enhancements made in the product since the release of Dynamics 365.</p>
+                    <p>Content for this and article and Parts II and III was gathered based on the information shared at AXUG Summit last week, and the Roadmap Portal.</p>
+                    <p>Next time: Accounts Receivable, Credit and Collections.</p>
+                    <p>If you have any question contact us on
+                        <a href="mailto:ashwini.kasat@realdynamics.com" target="_blank">info@realdynamics.com</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 side_blog">
+                <h3>Recent post</h3>
+                <br>
+                <ul class="dropdown_ul">
+                    <li>
+                        <h5>How-to: Bring your own data warehouse to Microsoft Dynamics 365 for Operations</h5>
+                        <p>September 1, 2017|| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog1.html" target="_self"><button class="btn btn-default btn-lg blog_2">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations, Part 2: Warehousing and mobile</h5>
+                        <p>August 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog2.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Project accounting and management in Microsoft Dynamics 365 for Operations</h5>
+                        <p>July 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog3.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations – Supply Chain</h5>
+                        <p>June 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog4.html" target="_self"><button class="btn btn-default btn-lg blog_4">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 3</h5>
+                        <p>May 1, 2017|<a href="">Real Dynamics Team</a></p>
+                        <br>
+                        <a href="blog5.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 2</h5>
+                        <p>April 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog6.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Microsoft Dynamics AX Company Split</h5>
+                        <p>March 3, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog7.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Budgeting Capabilities in New Microsoft Dynamics AX (Dynamics 365)</h5>
+                        <p>January 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog9.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tag_link">
+            <ul>
+                <li><a href="blog5.html">#D365</a></li>
+                <li><a href="blog4.html">#D365O</a></li>
+                <li><a href="blog5.html">#Dynamics365forOperations</a></li>
+                <li><a href="blog4.html">#Dynamics AX </a></li>
+                <li><a href="blog3.html">#Financial </a></li>
+                <li><a href="blog4.html">#Supply chain </a></li>
+                <li><a href="blog5.html">#customer engagement </a></li>
+                <li><a href="blog5.html">#client satisfaction </a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- contact div -->
+
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
+            <ul class="contact_ul">
+                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
+                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+

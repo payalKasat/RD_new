@@ -1,0 +1,429 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;              /*all text line height, color and style*/
+    color: #818181;
+}
+h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #35436e;  /* all h2 style*/
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 28px;
+    line-height: 1.375em;  /* all h4 style*/
+    color: #9db67e;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+h5{
+    font-size: 20px;
+    line-height: 1.375em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.social_media{
+    height: 40px;
+    width: 40px;                 /* top social media style*/
+    margin: 5px;
+}
+
+.top_logo{
+    height: 70px;
+    width: 70px;                 /* top logo style*/
+    border-radius: 100%;
+    margin: 2px;
+}
+#about{
+    height: 100vh;
+    background-image: url("images/team.jpg");     /* about section background image is fixed*/
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+.our_page>h2{
+    margin-top: 50px;
+    color: #35436e;
+    font-size: 70px;
+    text-shadow: 5px 5px 5px black;
+
+}
+.our_page>h4{
+    color:white;
+    font-weight: bolder;
+}
+.our_page>h4:hover{                         /*landing/ our page hover effect*/
+    font-size:32px ;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.logo-small {
+    color:#35436e;
+    font-size: 50px;
+}
+.logo {
+    width:100%;
+    height:100%;
+    color:#35436e;
+    font-size: 200px;
+}
+.logo_img{
+    width:100%;
+    height:100%;
+    border-radius: 100%;
+    box-shadow: -5px -5px 15px black;
+}
+.about_us_page{
+    border-bottom: solid 10px #35436e;
+    border-top: solid 10px #35436e;
+    background-color: #21242a;
+    opacity: 0.9;
+}
+.about_us>h4{
+    font-size: 20px;
+    color: #9db67e;
+}
+.work{
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.about_us>h2{
+    text-shadow: 2px 2px 3px black;
+    color: #4a567d;
+}
+.service_img>img{
+    height:50vh;
+    margin: 0 auto;
+    box-shadow: -5px -5px 5px #818181;
+}
+.service_img_logo{
+    height: 5vh;
+    margin: auto;
+}
+.service_info{
+    height: 55vh;
+    margin-bottom: 20px;
+
+}
+.work>li{
+    color: white;
+    list-style: square;
+}
+.service_info>h3{
+    color: #35436e;
+    font-weight: bolder;
+}
+p{
+    font-size: 18px;
+    color: #92ae6f;
+}
+.service_img_foundation{
+    border: solid 10px;
+}
+.service_offer_img{
+    background-image: url("images/Dollarphotoclub_4665940.jpg");
+    height: 50vh;
+    background-size: 100%;
+}
+.service_h2{
+    color: #35436e;
+}
+
+.service_offer{
+    border-bottom: solid 10px #35436e;
+    margin-bottom: 10vh;
+}
+#testimonial{
+    background-color: #9db67e;
+    border-top: solid 10px #35436e;
+    border-bottom: solid 10px #35436e;
+}
+#testimonial ul{
+    display: inline-block;
+}
+
+.testimonial_p>a{
+    text-decoration: underline;
+    color: #35436e;
+    font-size: 20px;
+}
+.testimonial_p>a:hover{
+    color: white;
+}
+.carousel-inner .item{
+    height: 35vh;
+
+}
+.carousel-inner>.item>h4{
+    color: white;
+    font-size: 28px;
+}
+.carousel-indicators{
+    padding-top: 30px;
+    bottom: -35px;
+}
+.dropdown_li_div{
+    border-bottom:solid 2px #35436e;
+    padding-bottom: 10px;
+}
+/*.mobile_dropdown{*/
+/*visibility: hidden;*/
+/*}*/
+#blog{
+    border-top: solid 10px #35436e;
+    border-bottom: solid 10px #35436e;
+}
+button>a{
+    color: white;
+}
+.slideanim.row{
+    border-bottom: solid 10px #35436e;
+}
+.btn{
+    background-color: #35436e;
+    color: white;
+    border-radius: 20px;
+}
+#team{
+    padding-top: 65px;
+}
+.team_info>h3{
+    color: #35436e;
+}
+.team_member>img{
+    height: 47vh;
+    margin: 5% 25%;
+    border-radius: 100%;
+    box-shadow: -5px -5px 5px gray;
+}
+.team_info>p,.team_info>h4{
+    color: #9db67e;
+}
+
+.team_info{
+    background-color: gainsboro;
+
+}
+#contact h2{
+    color: white;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color:#35436e;
+}
+.carousel-indicators li {
+    border-color:#35436e;
+}
+.carousel-indicators li.active {
+    background-color:#35436e;
+}
+.item{
+    height: 30vh;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 10px 0;
+}
+.item p{
+    color: white;
+}
+/*.panel {*/
+/*border: 1px solid#35436e;*/
+/*border-radius:0 !important;*/
+/*transition: box-shadow 0.5s;*/
+/*}*/
+/*.panel:hover {*/
+/*box-shadow: 5px 0 40px rgba(0,0,0, .2);*/
+/*}*/
+/*.panel-footer .btn:hover {*/
+/*border: 1px solid#35436e;*/
+/*background-color: #fff !important;*/
+/*color:#35436e;*/
+/*}*/
+/*.panel-heading {*/
+/*color: #fff !important;*/
+/*background-color:#35436e !important;*/
+/*padding: 25px;*/
+/*border-bottom: 1px solid transparent;*/
+/*border-top-left-radius: 0px;*/
+/*border-top-right-radius: 0px;*/
+/*border-bottom-left-radius: 0px;*/
+/*border-bottom-right-radius: 0px;*/
+/*}*/
+/*.panel-footer {*/
+/*background-color: white !important;*/
+/*}*/
+/*.panel-footer h3 {*/
+/*font-size: 32px;*/
+/*}*/
+/*.panel-footer h4 {*/
+/*color: #aaa;*/
+/*font-size: 14px;*/
+/*}*/
+/*.panel-footer .btn {*/
+/*margin: 15px 0;*/
+/*background-color:#35436e;*/
+/*color: #fff;*/
+/*}*/
+.navbar {
+    margin-bottom: 0;
+    background-color:gainsboro;
+    z-index: 9999;
+    border-bottom: solid 10px #92ae6f;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.contact_nav{
+    margin-left: -20px;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #35436e !important;
+    font-weight: bold;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color:#fff !important;
+    background-color: #35436e !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.navbar-right{
+    margin-top: 15px;
+}
+#contact p{
+    color: gainsboro;
+}
+#contact {
+    background-color: #35436e;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 5s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+/* media query for mobile devices */
+
+@media screen and (max-width: 740px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .service_info{
+        height: 75vh;
+        margin: 0 auto;
+    }
+    .item{
+        height: 70vh;
+    }
+    .service_offer_img{
+        height: 30vh;
+    }
+    .team_member>img{
+        height: 40vh;
+        margin: 0 12%;
+    }
+    /*.team_member>img{*/
+    /*margin: 10% 33%;*/
+    /*}*/
+
+    #about{
+        height: 120vh;
+        background-image: url("images/team.jpg");     /* about section background image is fixed*/
+        background-attachment: fixed;
+        #background-size: 100% 100%;
+
+    }
+    .logo_img{
+        width:50%;
+        height:50%;
+        margin: 0 auto;
+    }
+    .our_page>h4{
+        font-size: 17px;
+    }
+    .our_page>h2{
+        font-size: 55px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+
+
+
+/* media query for mobile devices landscape */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+
+}
+
+
+
+
+/* media query for small devices like ipad or ipad pro */
+
+@media screen and (max-width: 1023px) {
+    /*.team_member>img{*/
+    /*height: 40vh;*/
+    /*margin: 10% 28%;*/
+    /*}*/
+    .service_offer_img{
+        height: 28vh;
+    }
+    .service_info{
+        height: 65vh;
+        margin-bottom: 10px;
+    }
+    .carousel-inner .item{
+        height: auto;
+
+    }
+
+
+
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realdynamics-blog</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript,Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src=""></script>
+    <link rel="stylesheet" type="text/css" href="blog_page.css">
+</head>
+<body id="blog_page2 blog" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Real dynamics</a>
+            <img class="top_logo img-responsive" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+        </div>
+    </div>
+</nav>
+
+<div id="blog_content" class="container">
+    <div class="text-center">
+        <h2>BLOG</h2>
+    </div>
+    <div class="row blog_content_div">
+        <!--desktop blog view-->
+        <div class="row ">
+            <div class="col-sm-8 col-xs-12 blog_side">
+                <div class="blog2">
+                    <h5><img class="blog_header_img" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">What's new in Microsoft Dynamics 365 for Operations - Financials, Part 2</h5>
+                    <p>April 1, 2017| Real Dynamics Team</p>
+                    <br>
+                    <p>Microsoft unveiled Dynamics 365 for Operations - Financials at the AXUG 2016 Summit, and offered details on its functionality on the Microsoft Dynamics 365 for Operations Roadmap portal. Between the AXUG sessions and the portal, there is considerable information to sort out, which I hope to do in this series of articles.</p>
+                    <p>In <a href="blog2.html">Part 1</a>, we covered:</p>
+                    <ul>
+                        <li>General Ledger</li>
+                        <li>Accounts Payable</li>
+                        <li>Fixed Assets</li>
+                    </ul>
+                        <p>This time, we will delve into:</p>
+                    <ul>
+                        <li>Accounts Receivables</li>
+                        <li>Credit & Collections</li>
+                    </ul>
+                    <h3>Accounts Receivables</h3>
+                    <p>Several enhancements in the accounts receivable (AR) area are targeted at productivity gains in processing customer payments.</p>
+                    <p><strong>AR Payments enhancements:</strong> Similar to AP enhancements, you can now select the same invoice for settlement on multiple unposted AR payments journal lines. Also, AR's centralized payments functionality allows users to view past-due invoices across companies that are part of a centralized payment organizational hierarchy.</p>
+                    <p><strong>Customer Payments workspace:</strong> A new Customer Payments workspace provides insight into invoices that are overdue and payments that need the clerk's attention. Additionally, frequently-used reports such as aging and deposit reports are added to this workspace.</p>
+                    <p><strong>Reimbursements:</strong> The customer reimbursement functionality has been improved to allow reimbursing a customer in the transaction currency.</p>
+                    <p><strong>SEPA prepayments:</strong> SEPA functionality now allows generation of a SEPA payments without a backing invoice.</p>
+                    <p><strong>Prices including sales tax:</strong> This feature for free text invoices is now available for all countries/regions.</p>
+                    <img class="blog_img" src="blog_images/bl6.1.jpg" alt="REAL DYNAMICS" >
+                    <h3>Credit and collections</h3>
+                    <p>This area has got the most attention and with these enhancements, collecting money using Dynamics AX will be much easier. Microsoft has really worked on delivering solution to customers' common complaint of to many clicks to reach the right collections information.</p>
+                    <p><strong>Credit and collections workspace:</strong> A new Credit and Collections workspace provides visibility into key metrics for the collection agents in their day to day jobs, such as open cases, activities, and customers over their credit limits. New charts provide visibility into aged balances and amounts such as promise-to-pay and disputed amounts, etc. Without leaving the workspace, the information can be filtered to a specific company, customer pool, or customer.</p>
+                    <p><strong>Case management:</strong> Collection cases are now multi-company enabled, which allows collection agents to work cases across multiple companies without switching legal entities. Users can now filter down to specific transactions and activities related to a case.
+                    <br>Related collections cases can be now linked and with activities and transactions. Agents can filter by case, activity, or transaction to see related cases, activities, and transactions. These enhancements will reduce the number of steps and provide a full view of related information.
+                    <p>Collections notes: All the collection notes for the customer can now be seen on the Notes tab rather than having to select individual transactions and looking at their notes.</p>
+                    <p><strong>Collections status:</strong> While marking collection status as ‘promise to pay' on the transaction, users can now select promised payment date and amount. Two new statuses, ‘Promise to pay kept' and ‘Promise to pay broken' have been added to allow accurate tracking of collection status. More importantly - users don't have update these statuses manually; these collections statuses will be automatically updated when a payment is applied and next aging snapshots are created.
+                        <br>Similarly, disputed amounts and a follow-up date can be tracked when the transaction status is updated to Disputed.</p>
+                    <p><strong>Collections history:</strong> The new Collections History form will provide information such as balance and status updates to a transaction, the reason for the update, who made the update, when the update was made and more, all on the single form.</p>
+                    <p><strong>Write-off:</strong> In previous releases, there was only one Write-off GL account. With enhancement in this area, Write-off reason codes will help define the default GL account for write off. So users can set up different write-off reasons and associated GL accounts. These reason codes can be managed across legal entities from a single page.</p>
+                    <h3>What's coming next?</h3>
+                    <p>Upcoming enhancements in the Credit Management Power BI content pack will provide deep insights into your credit management and collection process. Power BI reports will help you manage exceptions in a much better way, proactively identifying customers over or nearing their credit limits and understanding the likelihood of payment delays and past-due payments early, so that you can start acting before it flows into past-due bucket.</p>
+                    <p>While these changes may seem like small enhancements, they can have a huge impact on the ability to collect cash from customers. I remember making several of such changes for a customer by understanding the time spent by the collections team on unnecessary clicks, then providing easy access to the information they needed. The change helped them drastically reduce Open AR. Between the reduction in Open AR and productivity gains, we made a CFO very happy.</p>
+                    <p>If you have any question contact us on
+                        <a href="mailto:ashwini.kasat@realdynamics.com" target="_blank">info@realdynamics.com</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 side_blog">
+                <h3>Recent post</h3>
+                <br>
+                <ul class="dropdown_ul">
+                    <li>
+                        <h5>How-to: Bring your own data warehouse to Microsoft Dynamics 365 for Operations</h5>
+                        <p>September 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog1.html" target="_self"><button class="btn btn-default btn-lg blog_2">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations, Part 2: Warehousing and mobile</h5>
+                        <p>August 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog2.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Project accounting and management in Microsoft Dynamics 365 for Operations</h5>
+                        <p>July 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog3.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations – Supply Chain</h5>
+                        <p>June 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog4.html" target="_self"><button class="btn btn-default btn-lg blog_4">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 3</h5>
+                        <p>May 1, 2017|<a href="">Real Dynamics Team</a></p>
+                        <br>
+                        <a href="blog5.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Microsoft Dynamics AX Company Split</h5>
+                        <p>March 3, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog7.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Dynamics 365 for Operations (AX7) - Financials, Part 1</h5>
+                        <p>February 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog8.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Budgeting Capabilities in New Microsoft Dynamics AX (Dynamics 365)</h5>
+                        <p>January 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog9.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tag_link">
+            <ul>
+                <li><a href="blog5.html">#D365</a></li>
+                <li><a href="blog4.html">#D365O</a></li>
+                <li><a href="blog5.html">#Dynamics365forOperations</a></li>
+                <li><a href="blog4.html">#Dynamics AX </a></li>
+                <li><a href="blog3.html">#Financial </a></li>
+                <li><a href="blog4.html">#Supply chain </a></li>
+                <li><a href="blog5.html">#customer engagement </a></li>
+                <li><a href="blog5.html">#client satisfaction </a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- contact div -->
+
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
+            <ul class="contact_ul">
+                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
+                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+

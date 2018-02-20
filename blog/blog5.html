@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realdynamics-blog</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript,Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="blog_page.css">
+</head>
+<body id="blog_page1 blog" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Real dynamics</a>
+            <img class="top_logo img-responsive" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+        </div>
+    </div>
+</nav>
+
+<div id="blog_content" class="container">
+    <div class="text-center">
+        <h2>BLOG</h2>
+    </div>
+    <div class="row blog_content_div">
+        <!--desktop blog view-->
+        <div class="row ">
+            <div class="col-sm-8 col-xs-12 blog_side">
+                <div class="blog1">
+                    <h5>
+                        <img class="blog_header_img" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+                        What's new in Microsoft Dynamics 365 for Operations - Financials, Part 3
+                    </h5>
+                    <p>May 1, 2017| Real Dynamics Team</p>
+                    <br>
+                    <p>In this third installment of a three-part series (Part 1, Part 2), we will summarize more new features in Financials in Dynamics 365 for Operations.</p>
+                    <p>This time, we will look into:</p>
+                    <ul>
+                        <li>Expense management</li>
+                        <li>Cash and Bank management</li>
+                        <li>Budgeting</li>
+                        <li>Financial reporting</li>
+                    </ul>
+                    <h3>Expense management</h3>
+                    <p>Expense management seems to have gotten a lot of attention. Word on the street is, as Microsoft itself uses the Dynamics AX platform for expense reports, productivity improvements and enhancements for better control in this area are being looked at closely.</p>
+                    <p>Copy an expense report: In prior functionality, the ability to copy an existing expense line within the same expense report existed. This functionality is now extended to allow users to copy the entire expense report and all the associated non-credit-card expenses to a new expense report. Credit card transactions can be added to the expense report when they show up in the credit card statement. Itemizations and attached receipts will not be copied and need to be entered again.</p>
+                    <p><strong>Bulk-edit expenses:</strong> You can multi-select credit card expense lines and make updates like adding them to the expense report, changing category or the project.</p>
+                    <p><strong>Create future-dated expenses:</strong> When you copy an expense report, you can put future dates on the transactions. However, you cannot submit future-dated expenses for approval. The Copy functionality is great to create future date expenses. It would be great if Microsoft were to add functionality to setup recurring expense reports too.</p>
+                    <p><strong>Ease of attaching receipts to multiple expense lines:</strong> Now you don't have to upload the same receipt for each expense line it relates to; you can attach the receipt on multiple lines of the expense report. Also, you can attach a previously uploaded receipt to another expense line in the same expense report.
+                    </p>
+                    <img class="blog_img" src="blog_images/bl5.1.png" alt="REAL DYNAMICS" >
+                    <p><strong>Create and maintain expense not attached to an expense report:</strong> Expenses can be created and maintained (e.g., attach receipts, itemize, assign guests) without first having to create an expense report. One or more expenses can be selected and added to a new expense report to submit for approval.</p>
+                    <p><strong>Define a multi-level approval workflow for expense:</strong> Employees can now enter the interim approver(s) when creating an expense report. This workflow will be helpful when a project manager needs to approve the expense report prior to routing it to the employee's supervisor.</p>
+                    <p><strong>Credit card transactions for terminated employees:</strong> It is very common to have transactions pending on a terminated employee's card. Terminated employees will no longer have access to corporate systems including the expense portal. In such cases, credit card transactions will still be imported and available in the credit card transactions form, rather than failing import. Such transactions can be then assigned to valid employee to file the expense report.</p>
+                    <p><strong>Change the expense credit card information for pending and past employees:</strong> You can define credit card information for pending workers and past workers. This enhancement allows you to define credit card info on a pending employee prior to their joining.</p>
+                    <p><strong>Change the expense credit card information for pending and past employees:</strong> You can define credit card information for pending workers and past workers. This enhancement allows you to define credit card info on a pending employee prior to their joining.</p>
+                    <p><strong>Change the exchange rate for credit card transactions:</strong> You can now set a parameter in the expense management parameters page to allow employees to override system exchange rate for credit card transactions.</p>
+                    <p><strong>Set up anti-corruption attestation for expenses:</strong> When employees have business with government officials, some expenses related to that business may be perceived as bribery. You can now set up an anti-corruption attestation that is displayed for selected expense categories, such as meals and gifts. Employees must acknowledge that the anti-corruption attestation that meets criteria defined by your organization's policies prior to submitting for approval.</p>
+                    <p><strong>Prevent manual entry of specific expense category expenses:</strong> An expense category can be set up such that a transaction category cannot be changed on an existing transaction, and which prevents manual entry of transactions. An example is a fee for late payment of a credit card, if corporate policy disallows employees from expensing credit card fees.</p>
+                    <p><strong>Configure expense taxes for a state/province:</strong> In some countries and regions like Canada, expenses incurred in a different state or province might be subject to different sales tax rates for recovery. You can now set up the expense tax configurations at the state/province level, not just at the country/region level. If you leave the State/Province field blank on the Tax configuration page, the sales tax group applies to all states and provinces for the specified country or region.</p>
+                    <p><strong>Set up expense credit card types:</strong> You can now create credit card types, such as Visa, MasterCard, or AMEX, to use with Expense management. This page is in the Setup area, in the Calculations and codes section. This was just a table with no form for users in prior releases.</p>
+                    <p>Key enhancements that will help customers in this area:</p>
+                    <ul>
+                        <li><strong>Travel requisition functionality:</strong> This functionality was available in AX 2012 and not yet released for Dynamics 365 for Operations. The ability to convert a travel requisition into an expense report would be welcome.</li>
+                        <li><strong>Integrations with the travel agents.</strong></li>
+                        <li><strong>Productivity enhancements </strong>in the Expense Management Mobile App like scanning receipts prior to an expense showing up on the credit card, and optical character recognition (OCR) capability to automatically match the receipts.</li>
+                        <li><strong>A view of all the line-level receipts at the header </strong>in a consolidated document. Auditors or approvers of the expense reports need not go through receipts for each line.</li>
+                    </ul>
+                    <p><strong>What's coming in BI for expense management</strong><br>Expense management Power BI reports will let managers and supervisors manage their expenditure budgets. By focusing on exceptions and outliers, these reports will help you to quickly take action when and where needed.</p>
+                    <p>You will be able to identify regular expenses and patterns by employees and business units, reduce waste, and negotiate better contracts with your suppliers and service providers for recurring expenses. This means that you can identify the numbers and patterns of expenses as they go through the various stages of processes, which will let you streamline your expense processes by removing bottlenecks and delays.</p>
+                    <h3>Cash and bank management</h3>
+                    <p>Similar to other areas, improvements in cash and bank management are focused on productivity gains for multi-company environments.
+                    </p>
+
+                    <p><strong>Bank statement import across companies: </strong>These enhancements will help customers who get consolidated bank statements across all legal entities to process them in one go, rather than having to process statements in each entity. You can also automatically run matching rules against all imported statements in each company.</p>
+                    <p><strong>Bank management workspace:</strong> A new bank management workspace will provide better visibility into bank accounts and balances for your legal entities. Current and pending balances are immediately available for all accounts, with the ability to drill back from the balances into the detailed transaction vouchers. You can also see the historical balance data for each bank account, or summarized for all bank accounts in the company, in both short- and long-term views. There is increased insight into bank account reconciliation, with last reconciled dates reported for each bank account as well as an indication of reconciliations in progress.</p>
+                    <h3>Budgeting</h3>
+                    <p>It was great to present with Sakata Seed at AXUG Summit about how the company uses Dynamics AX for Budget planning, (for more info please see slide deck).</p>
+                    <p>Few enhancements are being shipped as part the release for budgeting, but the following two are significant.</p>
+                    <p>Budget planning: Justification functionality was not shipped with the initial release of AX7 (It was available in AX 2012 R3) and is now released in the fall update. You can use justification documents to support your budgeting requests and provide additional information such as details of conference, PO or write-up about the overall need for additional head count.</p>
+                    <p>Basic budgeting: Budget exactly how you want by choosing the detail level to track your budget, and take advantage of your existing advanced rules that have been configured. Allow advanced rules in the budgeting process to provide extra budget tracking capabilities by financial dimensions.</p>
+                    <p>A key item on the roadmap is the ability to retain supporting information in the budget plan Excel template (e.g. calculations or additional sheets added to the budget plan worksheet).</p>
+                    <p>A key item asked for by the community is the ability to budget by attributes like customer/vendor/product without having to make them Financial dimensions.</p>
+                    <h3>Financial reporting</h3>
+                    <p>Management Reporter continues to be the financial reporting tool with Dynamics AX. User experience is more seamless while using it from Dynamics AX, however, financial reports are still delivered through Management Reporter.</p>
+                    <p>Some enhancements to financial reporting follow.</p>
+                    <ul>
+                        <li><strong>Analyze data more efficiently </strong>with financial dimensions in separate columns when exporting to Microsoft Excel. (I hope this feature gets released for Dynamics AX 2012 too and will be helpful for viewing financial dimensions as values in separate columns while reviewing GL transactions - a pain point reported by many Dynamics AX 2012 customers, and often results in complex custom reports).</li>
+                        <li><strong>Locking the top section of the report</strong> and printing on consecutive pages, similar to the Freeze Pane option in Excel.</li>
+                        <li><strong>Format reports to contain line numbers</strong> to easily identify report rows and statutory formats.</li>
+                        <li><strong>Print read-only, presentation-ready reports</strong> to PDF with Microsoft SQL Server 2016.</li>
+                        <li><strong>View additional details and versions of the financial reports</strong> with the report list enhancements. The list of reports shows when the report was last generated and how it was modified. You can also quickly filter your report list by folder name, so see only the reports relevant to you. View previous versions of the report to accurately track the change in data over time.</li>
+                        <li><strong>View translated financial data by any currency</strong> in the system, simply by choosing the currency in the report.</li>
+                        <li>Make it easy for users to see the generated date and time on report headers or footers using new autotext options.</li>
+                    </ul>
+                    <h3>What's coming</h3>
+                    <p>Microsoft is making significant investments in reporting with the help of Power BI. Expect several more reports that will be helpful across the financial functions delivered through Power BI in the upcoming release.<br>One of the key areas being worked on is cash flow analysis Power BI reports. This will provide visibility into your cash flow and help analyze future cash inflows and outflows with the cash flow calendar. This means that you can analyze cash inflows from expected payments; and analyze flows by legal entity, financial dimension, currency, and bank account, to get a better understanding of surpluses and shortfalls. Overall, you can get a temporal view of gaps and address them proactively.</p>
+                    <p>If you have any question contact us on
+                        <a href="mailto:ashwini.kasat@realdynamics.com" target="_blank">info@realdynamics.com</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 side_blog">
+                <h3>Recent post</h3>
+                <br>
+                <ul class="dropdown_ul">
+                    <li>
+                        <h5>How-to: Bring your own data warehouse to Microsoft Dynamics 365 for Operations</h5>
+                        <p>September 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog1.html" target="_self"><button class="btn btn-default btn-lg blog_2">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations, Part 2: Warehousing and mobile</h5>
+                        <p>August 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog2.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Project accounting and management in Microsoft Dynamics 365 for Operations</h5>
+                        <p>July 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog3.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations – Supply Chain</h5>
+                        <p>June 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog4.html" target="_self"><button class="btn btn-default btn-lg blog_4">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 2</h5>
+                        <p>April 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog6.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Microsoft Dynamics AX Company Split</h5>
+                        <p>March 3, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog7.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Dynamics 365 for Operations (AX7) - Financials, Part 1</h5>
+                        <p>February 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog8.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Budgeting Capabilities in New Microsoft Dynamics AX (Dynamics 365)</h5>
+                        <p>January 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog9.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tag_link">
+            <ul>
+                <li><a href="blog5.html">#D365</a></li>
+                <li><a href="blog4.html">#D365O</a></li>
+                <li><a href="blog5.html">#Dynamics365forOperations</a></li>
+                <li><a href="blog4.html">#Dynamics AX </a></li>
+                <li><a href="blog3.html">#Financial </a></li>
+                <li><a href="blog4.html">#Supply chain </a></li>
+                <li><a href="blog5.html">#customer engagement </a></li>
+                <li><a href="blog5.html">#client satisfaction </a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
+            <ul class="contact_ul">
+                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
+                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+

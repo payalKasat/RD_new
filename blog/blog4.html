@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realdynamics-blog</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript,Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="blog_page.css">
+</head>
+<body id="blog_page1 blog" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Real dynamics</a>
+            <img class="top_logo img-responsive" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+        </div>
+    </div>
+</nav>
+
+<div id="blog_content" class="container">
+    <div class="text-center">
+        <h2>BLOG</h2>
+    </div>
+    <div class="row blog_content_div">
+        <!--desktop blog view-->
+        <div class="row ">
+            <div class="col-sm-8 col-xs-12 blog_side">
+                <div class="blog1">
+                    <h5>
+                        <img class="blog_header_img" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+                        What’s new in Microsoft Dynamics 365 for Operations – Supply Chain
+                    </h5>
+                    <p>June 1, 2017| Real Dynamics Team</p>
+                    <br>
+                    <p>Microsoft Dynamics AX 365 is a new approach to business applications which brings together Dynamics CRM, AX, NAV and Office 365 with a unified application platform and data model.</p>
+                    <p>With additional capabilities coming from Azure, PowerBI, Cortana Intelligence, Azure Machine learning, Microsoft Flow and Microsoft PowerApps, this new form of business critical application is expected to scale new heights and empower businesses to focus and grow like never before.</p>
+                    <p>This first article will cover following enhancements expected in Supply Chain in Microsoft Dynamics AX 365 for Operations.  </p>
+                    <img class="blog_img" src="blog_images/bl4.1.png" alt="REAL DYNAMICS" >
+                    <p><strong>Vendor Consignment inventory</strong></p>
+                    <p>Consignment inventory is inventory that’s owned by a vendor, but stored at your site.  When you’re ready to consume or use the inventory, you take over the ownership of the inventory. Every Dynamics AX customer that has consignment inventory from vendors or with their customers had to come up with workarounds like zero $ inventory and moving it from one warehouse to another in system and many manual steps on PO Invoicing. It was still not perfect.  Good news is all of these workarounds will no longer required. </p>
+                    <img class="blog_img" src="blog_images/bl4.2.png" alt="REAL DYNAMICS" >
+                    <p>Following capabilities are expected in inbound consignment inventory processes: </p>
+                    <ul>
+                        <li>Physically receive vendor-owned inventory on-hand without creating general ledger transactions. </li>
+                        <li>Start a production process where the vendor-owned inventory can be physically reserved.</li>
+                        <li>Change the ownership of the raw material in order to be able to process the consumption as part of the production order processing.  </li>
+                        <li>Vendors can monitor consumption of their inventory using the vendor collaboration interface. </li>
+                        <li>Support for standard cost and moving average costing methods in vendor consignment inventory process. </li>
+                        <li>Vendors can monitor the consumption of consignment inventory to see when the customer takes ownership of inventory.  </li>
+                        <li>The On-hand consignment inventory page shows the vendor the actual stock level of the inventory that the customer has not yet taken ownership of.  </li>
+                        <li>The Purchase orders consuming consignment inventory page shows a list of the purchase orders that were generated when a transfer of ownership took place. </li>
+                    </ul>
+                    <p><strong>Inter-company Order Processing: ATP and direct shipment</strong></p>
+                    <p>Order promising person not only calculates the optimal delivery dates within the same selling company, going forward they would be able to evaluate product availability throughout the intercompany trading chain, as well as looks at delivery options directly from the vendor to the customer.</p>                      
+                    <p>The decisions about where demand is sourced from, and whether direct delivery is used, can now be recorded directly at the sales order line level. When a sales order is created, the availability check runs in the sourced company from the intercompany chain. Possible delivery dates are calculated using the delivery date control that can be configured individually for each sourcing company, like ATP or capable to promise (CTP).</p>                       
+                    <p>Delivery alternatives has a new functionality to help determine the best sourcing strategy and to help select the best options or trade-offs for meeting customer expectations for delivery dates. The options that are considered include: different sourcing options, different warehouses, possible procurement, different delivery methods, and the option to allow partial delivery.</p>                     
+                    <p>The ATP calculations are accessible directly from the sales order lines, which improves the usability for working with sales orders that source products through other orders.</p>
+                    <p><strong>Product Variant Enhancements</strong></p>
+                    <p>Microsoft is taking product variants to the next level by adding a product variant number nomenclature and by extending default order settings for product variants. </p>
+                    <ul>
+                        <li>By assigning a product variant nomenclature template to product masters, the product ID’s and names generated for product variants follow a specific structure. This makes it easier for you to identify and search for a product variant during order entry. </li>
+                        <li>The default order settings have been extended to allow configuration of specific default order settings per variant or per specific product dimension. </li>
+                        <li>The extension is leveraged in all processes in:
+                            <ul>
+                                <li>Sales</li>
+                                <li>Procurement </li>
+                                <li>Production</li>
+                                <li>Lean production and replenishment</li>
+                                <li>Project management</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Vendor Collaboration</strong></p>
+                    <p>Inviting vendors to collaborate directly in Dynamics 365 for Operations improves the vendor’s visibility of purchase orders and ensures a shared view on responses to purchase orders thereby greatly improving the communication between the organization and vendor.
+                    </p>
+                    <img class="blog_img" src="blog_images/bl4.3.png" alt="REAL DYNAMICS" >
+                    <ul>
+                        <li>This collaboration functionality has been expanded so that external vendors can now respond to individual purchase order lines and suggest changes, such as new dates, quantities, split a line in new delivery dates, or substitute an item with a new item.</li>
+                        <li>The Purchase order confirmation workspace allows vendors to see which POs they need to respond to, which POs are awaiting confirmation by the customer, and which POs have been confirmed but not yet processed with product receipt.</li>
+                        <li>Vendors can now suggest changes on lines and exchange documents.</li>
+                        <li>Customers can share notes and documents that are related to purchase orders with vendors, for example, to describe requirements. The vendor can also share notes and attachments with the customer when they respond to the PO. When a vendor responds to a PO, there are different messages that are shown when they Accept, Reject, or Accept with changes. These messages can be customized to better support the business processes of the buying company.<li>
+                        <li>A new external vendor administrator security role enables vendors to add new contacts and update information about contacts and to request new vendor collaboration users. Users with that role can also request that specific vendor user accounts are inactivated, or that security roles are modified. The same functionality is available for users at the customer company.  </li>
+                    </ul>
+                    <p><strong>Enhancements to the bill of materials functionality
+                    </strong></p>
+                    <p>The enhancements in bill of materials functionality, includes:</p>
+                    <ul>
+                        <li>Support for BOMs that include items with different product dimensions on the same item.</li>
+                        <li>Production orders with circular structures at the first level of their BOMs are excluded from BOM level calculation for material resource planning.</li>
+                        <li>The ability to calculate separate BOM levels for material resource planning and cost calculation. </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 side_blog">
+                <h3>Recent post</h3>
+                <br>
+                <ul class="dropdown_ul">
+                    <li>
+                        <h5>How-to: Bring your own data warehouse to Microsoft Dynamics 365 for Operations</h5>
+                        <p>September 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog1.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations, Part 2: Warehousing and mobile</h5>
+                        <p>August 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog2.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Project accounting and management in Microsoft Dynamics 365 for Operations</h5>
+                        <p>July 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog3.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 3</h5>
+                        <p>May 1, 2017|<a href="">Real Dynamics Team</a></p>
+                        <br>
+                        <a href="blog5.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 2</h5>
+                        <p>April 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog6.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Microsoft Dynamics AX Company Split</h5>
+                        <p>March 3, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog7.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Dynamics 365 for Operations (AX7) - Financials, Part 1</h5>
+                        <p>February 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog8.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Budgeting Capabilities in New Microsoft Dynamics AX (Dynamics 365)</h5>
+                        <p>January 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog9.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tag_link">
+            <ul>
+                <li><a href="blog5.html">#D365</a></li>
+                <li><a href="blog4.html">#D365O</a></li>
+                <li><a href="blog5.html">#Dynamics365forOperations</a></li>
+                <li><a href="blog4.html">#Dynamics AX </a></li>
+                <li><a href="blog3.html">#Financial </a></li>
+                <li><a href="blog4.html">#Supply chain </a></li>
+                <li><a href="blog5.html">#customer engagement </a></li>
+                <li><a href="blog5.html">#client satisfaction </a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
+            <ul class="contact_ul">
+                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
+                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+

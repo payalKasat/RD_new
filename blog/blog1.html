@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realdynamics-blog</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript,Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="blog_page.css">
+</head>
+<body id="blog_page1 blog" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Real dynamics</a>
+            <img class="top_logo img-responsive" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+        </div>
+    </div>
+</nav>
+
+<div id="blog_content" class="container">
+    <div class="text-center">
+        <h2>BLOG</h2>
+    </div>
+    <div class="row blog_content_div">
+        <!--desktop blog view-->
+            <div class="row ">
+                <div class="col-sm-8 col-xs-12 blog_side">
+                    <div class="blog1">
+                        <h5><img class="blog_header_img" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">How-to: Bring your own data warehouse to Microsoft Dynamics 365 for Operations</h5>
+                        <p>September 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <p>Many customers have an existing data warehouse where Microsoft Dynamics AX ERP data constitutes a fraction of the share and non-ERP data constitutes a larger share. In such situations re-architecting the whole data warehouse may be infeasible. Customers would need AX data in their own data warehouse, which is why Dynamics 365 for Operations supports the option to bring your own data warehouse (or BYODw - not yet an industry acronym, but it will be).<br>When would a D365 for Operations customer opt for BYODw, when the customer can leverage the entity store (AXDW) out of box for all reporting based on AX data? If they have their own data warehouse and need information from D365 Operations, then they need to choose BYODw.<br>Using D365 for Operations (AX), you can export data to an Azure SQL database and then pull the information from there to your own data warehouse.<br>Below are high-level steps to achieve this extraction of information from D365O into your own data warehouse.<br>First we would set up an Azure SQL server with an active subscription:</p>
+                        <img class="blog_img" src="blog_images/bl1.png" alt="REAL DYNAMICS" >
+                        <p>Then we would create a new Azure SQL Database. Note the connection details:</p>
+                        <img class="blog_img" src="blog_images/bl1.2.png" alt="REAL DYNAMICS" >
+                        <p>We can browse data in the in-browser SQL Database Query Editor (now in preview in the Azure Portal), and/or using the SQL Server Object Explorer in Visual Studio.<br>Next we open a Data management workspace in D365 for Operations:</p>
+                        <img class="blog_img" src="blog_images/bl1.3.png" alt="REAL DYNAMICS" >
+                        <p>Here we create a connection with the new Azure SQL DB. Provide all necessary details viz. Server, Initial Catalog, user id and password and click the Validate button.</p>
+                        <img class="blog_img" src="blog_images/bl1.4.png" alt="REAL DYNAMICS" >
+                        <p>NOTE: Continue with the next steps only if the validation is successful. If you encounter an error, then review your connection details, update, and try again.<br>Based on the Azure SQL DB setup, you can enable/disable clustered column store indexes.<br>Next, we click on Publish in the toolbar (see above) to publish the entity structure from D365O to Azure SQL DB.<br>In the Target entities list, we select one or many entities for publishing.<br>Before clicking on Publish, ensure that you enable change tracking either at primary table level on entity level:</p>
+                        <img class="blog_img" src="blog_images/bl1.5.png" alt="REAL DYNAMICS" >
+                        <p>Next we set up an export job to extract information from D365 for Operations. For this we would need to set up an export data project, select the entity to export, fields to export, export trigger and recurrence:</p>
+                        <img class="blog_img" src="blog_images/bl1.6.png" alt="REAL DYNAMICS" >
+                        <p>Ensure while exporting that the target data format is that of the connection to Azure SQL DB.<br>Note the Application ID while setting up recurrence as sometimes it gets flushed out and we need it to be enabled for the two cloud service to interact:</p>
+                        <img class="blog_img" src="blog_images/bl1.7.png" alt="REAL DYNAMICS" >
+                        <p>Once the recurring data job is setup and executed, one can verify through the job history the data and frequency of export:</p>
+                        <img class="blog_img" src="blog_images/bl1.8.png" alt="REAL DYNAMICS" >
+                        <p>After ensuring data has been successfully extracted from D365 for Operations, it is time to view the same in Azure SQL Database. The figure below illustrates one of my favorite ways of exploring data in Azure SQL DB using SQL Server Object Explorer in Visual Studio (2015 Professional):</p>
+                        <img class="blog_img" src="blog_images/bl1.9.png" alt="REAL DYNAMICS" >
+                        <p>For this you need to download an add-in from Azure/Microsoft, then create a new database connection by providing adequate connection and security details. Once the connection is established, the data from D365 for Operations can be browsed or otherwise used in your data warehouse.</p>
+                        <p>If you have any question contact us on
+                            <a href="mailto:ashwini.kasat@realdynamics.com" target="_blank">info@realdynamics.com</a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 side_blog">
+                    <h3>Recent post</h3>
+                    <br>
+                    <ul class="dropdown_ul">
+                        <li>
+                            <h5>What’s new in Microsoft Dynamics 365 for Operations, Part 2: Warehousing and mobile</h5>
+                            <p>August 1, 2017| Real Dynamics Team</p>
+                            <br>
+                            <a href="blog2.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                        </li>
+                        <li>
+                            <h5>What’s new in Project accounting and management in Microsoft Dynamics 365 for Operations</h5>
+                            <p>July 1, 2017| Real Dynamics Team</p>
+                            <br>
+                            <a href="blog3.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                        </li>
+                        <li>
+                            <h5>What’s new in Microsoft Dynamics 365 for Operations – Supply Chain</h5>
+                            <p>June 1, 2017| Real Dynamics Team</p>
+                            <br>
+                            <a href="blog4.html" target="_self"><button class="btn btn-default btn-lg blog_4">Read more</button></a>
+                        </li>
+                        <li>
+                            <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 3</h5>
+                            <p>May 1, 2017|<a href="">Real Dynamics Team</a></p>
+                            <br>
+                            <a href="blog5.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                        </li>
+                        <li>
+                            <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 2</h5>
+                            <p>April 1, 2017| Real Dynamics Team</p>
+                            <br>
+                            <a href="blog6.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                        </li>
+                        <li>
+                            <h5>Microsoft Dynamics AX Company Split</h5>
+                            <p>March 3, 2017| Real Dynamics Team</p>
+                            <br>
+                            <a href="blog7.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                        </li>
+                        <li>
+                            <h5>What's new in Dynamics 365 for Operations (AX7) - Financials, Part 1</h5>
+                            <p>February 1, 2017| Real Dynamics Team</p>
+                            <br>
+                            <a href="blog8.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                        </li>
+                        <li>
+                            <h5>Budgeting Capabilities in New Microsoft Dynamics AX (Dynamics 365)</h5>
+                            <p>January 1, 2017| Real Dynamics Team</p>
+                            <br>
+                            <a href="blog9.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        <div class="tag_link">
+            <ul>
+                <li><a href="blog5.html">#D365</a></li>
+                <li><a href="blog4.html">#D365O</a></li>
+                <li><a href="blog5.html">#Dynamics365forOperations</a></li>
+                <li><a href="blog4.html">#Dynamics AX </a></li>
+                <li><a href="blog3.html">#Financial </a></li>
+                <li><a href="blog4.html">#Supply chain </a></li>
+                <li><a href="blog5.html">#customer engagement </a></li>
+                <li><a href="blog5.html">#client satisfaction </a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
+            <ul class="contact_ul">
+                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
+                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+

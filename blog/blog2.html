@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realdynamics-blog</title>
+    <meta name="author" content="ashwini kasat">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="blog_page.css">
+</head>
+<!-- bootstrap -->
+<body id="blog_page2 blog" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">Real dynamics</a>
+            <img class="top_logo img-responsive" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">
+        </div>
+    </div>
+</nav>
+
+<div id="blog_content" class="container">
+    <div class="text-center">
+        <h2>BLOG</h2>
+    </div>
+    <div class="row blog_content_div">
+        <!--desktop blog view-->
+        <div class="row ">
+            <div class="col-xs-12 col-sm-8 blog_side">
+                <div class="blog2">
+                    <h5><img class="blog_header_img" src="blog_images/Square%20Logo%20-%20Transparent%20-%20No%20Title.png">What’s new in Microsoft Dynamics 365 for Operations, Part 2: Warehousing and mobile</h5>
+                    <p>August 1, 2017| Real Dynamics Team</p>
+                    <br>
+                    <p>In Part-1 of this two-part series, we explored supply chain enhancements in Dynamics 365 for Operations.</p><p>This time, we will explore new capabilities in warehousing and the Dynamics 365 for Operations mobile app.</p><p>As Microsoft describes the Warehousing module of Dynamics 365 for Operations, you can:</p><p>"Automate your warehouse processes to reduce operational costs. With Microsoft ERP, your warehouse managers can better control their put-away, quality-control, and picking operations. And, with a flexible workflow engine, they can rapidly respond to changing business needs."</p><p>Let us explore what all these capabilities looks like, in detail.</p><p><strong>Warehouse enhancements for high-volume distribution centers</strong></p>
+                    <img class="blog_img" src="blog_images/bl2.1.png" alt="REAL DYNAMICS" >
+                    <p>Several enhancements have been made to enhance the productivity of warehouse workers by adding flexibility and effectiveness to operations after work has been created. Additions to the packing station functionality include the ability to:</p>
+                    <ul>
+                        <li>Create work after packing. This is important when there are additional processes after manual packing (such as palletizing, quality inspection, consolidation of shipments, or changes to loading docks). These steps can now be modelled with separate work steps in the warehouse management solution for Dynamics 365 for Operations.
+                        </li>
+                        <li>
+                            Group containers. This allows multiple packages to be grouped into one container or license plate. For example, an eCommerce operator can group 100 individual packets into one container that can be further processed (moved, staged, loaded) by just scanning one barcode (license plate) for the grouped container.
+                        </li>
+                        <li>
+                            Create a release policy for packed containers. The creation of work that's triggered by container release can be automated or manual. When it's automatic, work is generated at container closure using the location directive and work template framework. A manual release empowers the packer to decide when the work should be generated - for a single container or for a group of containers. This feature reduces the risk of picking and moving closed containers that aren't yet ready to be moved from the packing station. It allows for non-system steered grouped release.
+                        </li>
+                    </ul>
+                    <p>Also, support has been added for<strong> short-pick processes</strong>, and when an associate wants to fulfil an order with an item that is available elsewhere. It's possible to use an automatic re-allocation process, which uses location directives to retrieve. Alternatively, when manual re-allocation is used, a list of the locations with the relevant item is shown on the mobile device, allowing the warehouse worker to choose a source location. These two methods can be set individually or combined as a single command on the warehouse worker menu.</p>
+                    <p>It is now possible to<strong> move inventory that has work associated to it.</strong> This can be useful if, for example, a worker wants to clear some inbound dock space and move registered pallets that are waiting to be put away to another inbound location. The dock is cleared and can receive an additional load of goods, and the inventory that's been moved is updated with new put-away information.</p>
+                    <p>You can also<strong> merge license plates </strong>that have outbound work associated with them. For example, when a pick has been broken into several pieces of work, it can be useful to allow the license plates to be merged after they are delivered at the staging location.</p>
+                    <p>It is now possible to<strong> freeze work at the line level instead of at the header level</strong>, so workers can fulfil the pick lines that aren't frozen by demand replenishment. This feature allows a wholesaler with large sales orders or a retailer with large replenishment transfer orders to allow the picking work to start on all lines that are not subject to replenishment work enabling parallel completion of the picking and replenishment work.</p>
+                    <p>Work can now be <strong>cancelled using the mobile device</strong>, with or without demand replenishment. Previously, this process was only possible using the rich client.
+                    </p>
+                    <p><strong>Warehouse operation enhancements
+                    </strong></p>
+                    <p>Enhancements for warehouse operations include:
+                    </p>
+                    <ul>
+                        <li><strong>Support for container types in inbound processing.</strong> You may use different container types in the warehouse to control storage optimization and other processes. The new Container Type entity uses the physical characteristics of the container types. You can now associate license plates with a specific container type and use location stocking limits. For example, you can control how many pallets (or other container types) you allow at a specific location. Container types have also been added to unit sequence groups to add default container types for the receiving process. Container types can be used with inbound and outbound location directives, and on the inventory-on-hand view to identify how many container types are currently stored.
+                        </li>
+                        <li><strong>Reverse ship confirmation is enabled for all source documents,</strong> as well as the cancellation of packing slips and product receipts. In a warehouse, it's important to be able to handle late changes; for example, some goods might be damaged making shipment impossible, or a customer wants to cancel or change an order. Dynamics 365 for Operations supports the ability to reverse a shipment, allowing for cancellation of a packing slip that can later be updated with correct quantities. Similarly, on the inbound flow it's possible to cancel product receipts so that an updated version can be created.
+                        </li>
+                        <li><strong>Support for receipt and put-away of pallets containing mixed items.</strong> It is now possible to receive and register a "mixed" pallet, with different items on one pallet that relate to one or several purchase orders or lines. All registrations can be summarized into one target license plate. This process is enabled though the warehouse mobile device. For example, when the mixed pallet arrives, the receiving clerk identifies the items and the quantities before the pallet is moved to dedicated put-away locations; those locations are identified by work templates and location directives. If the put-away locations are spread over several items with fixed locations, this feature creates as many work lines as there are different items on the pallet. Thus, registering and put-away of the received mixed items pallets is faster and more flexible.
+                        </li>
+                    </ul>
+                    <p><strong>Additional warehouse support in manufacturing</strong>
+                    </p>
+                    <p>This release introduces new workflows for the handheld mobile device, which enable you to:</p>
+                    <ul>
+                        <li><strong>Use a handheld device to register empty Kanban</strong> through scan of the Kanban card. When an empty scan is registered, a new Kanban is created for replenishment.
+                        </li>
+                        <li><strong>Register material consumption of unreserved batches</strong> and serial numbers from both license plate and non-license plate controlled locations. The registered material will be posted against the production order in the Production picking list journal.
+                        </li>
+                    </ul>
+                    <p><strong>Enable withdrawal Kanban for warehouse processes
+                    </strong></p>
+                    <p>Support will be added for the withdrawal Kanban in production to replenish material on the production floor for lean, discrete, and process manufacturing. This will make it possible to release work for Kanban picking for the withdrawal Kanban, so that items can be picked from non-fixed locations in the warehouse. </p>
+                    <p>Advanced warehousing in retail
+                    </p>
+                    <img class="blog_img" src="blog_images/bl2.2.png" alt="REAL DYNAMICS" >
+                    <p>This functionality will let retailers use the advanced warehouse management solution in their stores. Stores can be modelled as advanced warehouses so it is possible to take advantage of all the advanced warehouse functionality, including hand-held solutions. In addition, all current retail store inventory processes and any point-of-sale (POS) process that creates or updates inventory transactions has been updated to work with the specific requirements for advanced warehouses.​
+
+                    </p>
+                    <ul>
+                        <li><strong>POS inventory lookup in a Dynamics 365 for Operations Warehousing-enabled </strong>store shows the available quantities across other stores and warehouses.
+                        </li>
+                        <li><strong>Process a product receipt for a purchase order</strong> in POS for a Warehousing-enabled store and items, which makes it easy to select locations and receive into and enter the license plate to auto populate receiving lines.
+                        </li>
+                        <li><strong>Process a product receipt for a transfer order</strong> in POS for a Warehousing-enabled store and items, which makes it easy to select locations and receive into and enter the license plate to auto populate receiving lines.
+                        </li>
+                        <li><strong>Process a shipment of products</strong> from the Warehousing-enabled store and items, which allows you to select locations to ship from, as well as ignore license plate and inventory status.</li>
+                    </ul>
+                    <p><strong>Cross-docking from production to transfer orders
+                    </strong>
+                    </p>
+                    <p>A new option for cross docking from a production or batch order to released transfer orders is upcoming. This is relevant in manufacturing if the material produced is immediately transferred to remote warehouses and distribution centers, and not stored at the production site. A work policy will be used to query for cross-docking opportunities. This will include the product and the location for the produced goods.</p>
+                    <p><strong>Warehouse work policies (released in D365)
+                    </strong></p>
+                    <p>After ensuring data has been successfully extracted from D365 for Operations, it is time to view the same in Azure SQL Database. The figure below illustrates one of my favorite ways of exploring data in Azure SQL DB using SQL Server Object Explorer in Visual Studio (2015 Professional):</p>
+                    <p>For this you need to download an add-in from Azure/Microsoft, then create a new database connection by providing adequate connection and security details. Once the connection is established, the data from D365 for Operations can be browsed or otherwise used in your data warehouse.
+                    </p>
+                    <p>The new warehouse work policy is applicable for specific locations and products.</p>
+                    <img class="blog_img" src="blog_images/bl2.3.png" alt="REAL DYNAMICS" >
+                    <p>Typically, warehouse work for finished goods put-away and co-products and by-products put-away is created when a production order is reported as finished. By using the new warehouse work policy, you have the flexibility to control whether warehouse work needs to be created for finished goods put-away and co-products and by-products put away. For example, this can be useful if the finished goods from one production area are reported to a location where the goods are later consumed.</p>
+                    <p>Warehouse work for raw material picking is typically created when releasing a production or batch order. By using the new warehouse work policy, you have the flexibility to control whether warehouse work for raw material picking needs to be created. This can be useful if, for example, the material consumed by production is received directly where it is consumed.
+                    </p>
+                    <p>Microsoft's Warehouse Management home page, provides more details</p>
+                    <p><strong>New Dynamics 365 for Operations mobile app</strong></p>
+                    <p>We can now design mobile experiences to enable your users to stay productive while on the move. The mobile approach allows you to reuse business logic and modelling from the product while enabling rich offline and mobile interactions, and an easy-to-use designer experience.</p>
+                    <img class="blog_img" src="blog_images/bl2.4.png" alt="REAL DYNAMICS" >
+                    <p>Dynamics 365 for Operations brings support for a mobile phone app (to be available on iTunes App Store for iPhones, Google Play Store for Android phones, and Windows Store for Window phones).</p>
+                    <img class="blog_img" src="blog_images/bl2.5.png" alt="REAL DYNAMICS" >
+                    <p>Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions in order to include customizations made to the product.</p>
+                    <p><strong>Mobility and modern user experience</strong></p>
+                    <img class="blog_img" src="blog_images/bl2.6.png" alt="REAL DYNAMICS" >
+                    <p>Retailers will benefit from leveraging a POS application that is built on a state of the art, cloud engineered, secure, and flexible architecture, designed and optimized to run on different form factors, and across Windows, iOS, and Android.</p>
+                    <p><strong>Key capabilities expected:</strong>​</p>
+                    <ul>
+                        <li>A single, universal POS application that is designed to run on phones, tablets, and PCs based on Universal Windows Platform.</li>
+                        <li>Consistent user experiences, including common navigation, recognizable patterns, and intuitive interactions with a responsive and consistent shell.</li>
+                        <li>Rich functional capabilities that are optimized for touch and keyboard experiences.</li>
+                        <li>An iOS application for phones and tablets.</li>
+                        <li>Centrally managed and targeted for stores, registers, or specific users.</li>
+                        <li>A user interface to match unique processes and the ability to define specific layouts for specific layout sizes targeted for specific devices.</li>
+                        <li>The ability to allow retailers to ensure that the aesthetics resonate and communicates a unique brand.</li>
+                        <li>Simple and easy deployment (self-serve).</li>
+                        <li>Configurability to connect to Microsoft Cloud or Retail Store Server.</li>
+                    </ul>
+                    <p><strong>Mobile in production operations</strong></p>
+
+                    <p>The mobile app for production will make it possible to start, complete, or cancel production activities or operations on a mobile device. It can also be used to handle units on the shop floor or in the warehouse by scanning the bar code of the attached labels, such as license plates. Based on the scan results, the app will show related information which would enable warehouse personnel on the move to make informed decision using right information available on time.</p>
+                    <p><strong>New mobile warehouse app</strong></p>
+                    <p>An application is expected that will allow handheld mobile devices to run warehouse operations connected to Dynamics 365 for Operations without installing the Warehouse Mobile Devices portal.<br>The app will use the existing business logic for handheld devices to run warehouse operations, but it will have a new simplified responsive user interface that dynamically scales to the screen size and resolution of the handheld device. It will also be possible to show a company logo on the log-in screen and product pictures as part of the warehouse operations.</p>
+                    <p>If you have any question contact us on
+                        <a href="mailto:ashwini.kasat@realdynamics.com" target="_blank">info@realdynamics.com</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 side_blog">
+                <h3>Recent post</h3>
+                <br>
+                <ul class="dropdown_ul">
+                    <li>
+                        <h5>How-to: Bring your own data warehouse to Microsoft Dynamics 365 for Operations</h5>
+                        <p>September 1, 2017|| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog1.html" target="_self"><button class="btn btn-default btn-lg blog_2">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Project accounting and management in Microsoft Dynamics 365 for Operations</h5>
+                        <p>July 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog3.html" target="_self"><button class="btn btn-default btn-lg">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What’s new in Microsoft Dynamics 365 for Operations – Supply Chain</h5>
+                        <p>June 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog4.html" target="_self"><button class="btn btn-default btn-lg blog_4">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 3</h5>
+                        <p>May 1, 2017|<a href="">Real Dynamics Team</a></p>
+                        <br>
+                        <a href="blog5.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Microsoft Dynamics 365 for Operations - Financials, Part 2</h5>
+                        <p>April 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog6.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Microsoft Dynamics AX Company Split</h5>
+                        <p>March 3, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog7.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>What's new in Dynamics 365 for Operations (AX7) - Financials, Part 1</h5>
+                        <p>February 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog8.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                    <li>
+                        <h5>Budgeting Capabilities in New Microsoft Dynamics AX (Dynamics 365)</h5>
+                        <p>January 1, 2017| Real Dynamics Team</p>
+                        <br>
+                        <a href="blog9.html" target="_self"><button class="btn btn-default btn-lg blog_5">Read more</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tag_link">
+            <ul>
+                <li><a href="blog5.html">#D365</a></li>
+                <li><a href="blog4.html">#D365O</a></li>
+                <li><a href="blog5.html">#Dynamics365forOperations</a></li>
+                <li><a href="blog4.html">#Dynamics AX </a></li>
+                <li><a href="blog3.html">#Financial </a></li>
+                <li><a href="blog4.html">#Supply chain </a></li>
+                <li><a href="blog5.html">#customer engagement </a></li>
+                <li><a href="blog5.html">#client satisfaction </a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- contact div -->
+
+<div id="contact" class="container-fluid">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
+            <ul class="contact_ul">
+                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
+                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+

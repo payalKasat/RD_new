@@ -424,7 +424,7 @@ button>a{
 
     }
     #about{
-        height: 100vh;
+        height: 120vh;
         background-image: url("images/team.jpg");     /* about section background image is fixed*/
         background-attachment: fixed;
         background-size: auto;

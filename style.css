@@ -372,7 +372,7 @@ button>a{
         height: 120vh;
         background-image: url("images/team.jpg");     /* about section background image is fixed*/
         background-attachment: fixed;
-        #background-size: 100% 100%;
+        #background-size: auto;
 
     }
     .logo_img{

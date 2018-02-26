@@ -368,13 +368,13 @@ button>a{
     /*margin: 10% 33%;*/
     /*}*/
 
-    #about{
-        height: 120vh;
-        background-image: url("images/team.jpg");     /* about section background image is fixed*/
-        background-attachment: fixed;
-        #background-size: auto;
+    /*#about{*/
+        /*height: 120vh;*/
+        /*background-image: url("images/team.jpg");     !* about section background image is fixed*!*/
+        /*background-attachment: fixed;*/
+        /*#background-size: auto;*/
 
-    }
+    /*}*/
     .logo_img{
         width:50%;
         height:50%;
@@ -421,6 +421,14 @@ button>a{
     }
     .carousel-inner .item{
         height: auto;
+
+    }
+    #about{
+        height: 100vh;
+        background-image: url("images/team.jpg");     /* about section background image is fixed*/
+        background-attachment: fixed;
+        background-size: auto;
+        /*background-color: #818181;*/
 
     }
 

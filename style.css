@@ -2,6 +2,7 @@ body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;              /*all text line height, color and style*/
     color: #818181;
+    background-color:#fefefe;
 }
 h2 {
     font-size: 38px;
@@ -38,20 +39,25 @@ h5{
 }
 #about{
     height: 100vh;
-    background-image: url("images/team.jpg");     /* about section background image is fixed*/
+    background-image: url("images/dreamstime_xxl_47764691 (2).jpg");     /* about section background image is fixed*/
     background-attachment: fixed;
     background-size: 100% 100%;
+    z-index: -1;
+    /*filter: grayscale(90%); !* make all photos black and white *!*/
+    /*width: 100%; !* Set width to 100% *!*/
+    /*margin: auto;*/
+    #opacity: 0.8;
 
 }
 .our_page>h2{
     margin-top: 50px;
-    color: #35436e;
+    color: #fdfdfd;
     font-size: 70px;
     text-shadow: 5px 5px 5px black;
 
 }
 .our_page>h4{
-    color:white;
+    color: #040404;
     font-weight: bolder;
 }
 .our_page>h4:hover{                         /*landing/ our page hover effect*/
@@ -402,9 +408,6 @@ button>a{
 
 }
 
-
-
-
 /* media query for small devices like ipad or ipad pro */
 
 @media screen and (max-width: 1023px) {
@@ -425,9 +428,9 @@ button>a{
     }
     #about{
         height: 120vh;
-        background-image: url("images/team.jpg");     /* about section background image is fixed*/
+        background-image: url("images/dreamstime_xxl_47764691 (2).jpg");     /* about section background image is fixed*/
         background-attachment: fixed;
-        background-size: auto;
+        #background-size: auto;
         /*background-color: #818181;*/
 
     }

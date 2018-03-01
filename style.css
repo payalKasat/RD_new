@@ -396,7 +396,7 @@ button>a{
         height: 120vh;
         background-image: url("images/dreamstime_xxl_47764691 (2).jpg");     /* about section background image is fixed*/
         background-attachment: fixed;
-        background-size: 100% 100%;
+        #background-size: auto;
         /*background-color: #818181;*/
 
     }

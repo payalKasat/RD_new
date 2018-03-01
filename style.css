@@ -64,7 +64,7 @@ h5{
     font-weight: bolder;
 }
 .our_page>h4:hover{                         /*landing/ our page hover effect*/
-    font-size:32px ;
+    text-decoration: underline;
 }
 .container-fluid {
     padding: 60px 50px;

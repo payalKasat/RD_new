@@ -1,4 +1,4 @@
-body {
+fbody {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;              /*all text line height, color and style*/
     color: #818181;
@@ -32,10 +32,10 @@ h5{
 }
 
 .top_logo{
-    height: 70px;
-    width: 70px;                 /* top logo style*/
-    border-radius: 100%;
-    margin: 2px;
+    height: 7vh;
+    /*#width: 70px;                 !* top logo style*!*/
+    /*#border-radius: 100%;*/
+    #margin: 2px;
 }
 #about{
     height: 100vh;
@@ -43,10 +43,9 @@ h5{
     background-attachment: fixed;
     background-size: 100% 100%;
     z-index: -1;
-    /*filter: grayscale(90%); !* make all photos black and white *!*/
+    /*filter: grayscale(50%); !* make all photos black and white *!*/
     /*width: 100%; !* Set width to 100% *!*/
-    /*margin: auto;*/
-    #opacity: 0.8;
+    margin: auto;
 
 }
 .our_page{
@@ -54,18 +53,23 @@ h5{
 }
 .our_page>h2{
     margin-top: 50px;
-    color: #fdfdfd;
+    color: #fefefe;
     font-size: 70px;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 15px #000000;
 
 }
-.our_page>h4{
-    color: #040404;
+.header{
+    color: #000000;
+    text-shadow: 5px 5px 5px #fefefe;
+}
+.our_page>h4>a{
+    color: #fefefe;
+    text-shadow: 3px 3px 3px #000000;
     font-weight: bolder;
 }
-.our_page>h4:hover{                         /*landing/ our page hover effect*/
-    text-decoration: underline;
-}
+/*.our_page>h4:hover{                         !*landing/ our page hover effect*!*/
+    /*text-decoration: underline;*/
+/*}*/
 .container-fluid {
     padding: 60px 50px;
 }
@@ -96,14 +100,13 @@ h5{
     font-size: 20px;
     color: #9db67e;
 }
-.work{
+.work, .work>li>a{
     color: white;
     font-size: 20px;
-    text-decoration: underline;
 }
 .about_us>h2{
     text-shadow: 2px 2px 3px black;
-    color: #4a567d;
+    color: white;
 }
 .service_img>img{
     height:50vh;
@@ -128,7 +131,7 @@ h5{
     font-weight: bolder;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
     color: #92ae6f;
 }
 .service_img_foundation{
@@ -184,13 +187,12 @@ p{
 /*visibility: hidden;*/
 /*}*/
 #blog{
-    border-top: solid 10px #35436e;
     border-bottom: solid 10px #35436e;
 }
 button>a{
     color: white;
 }
-.slideanim.row{
+.first_row,.second_row{
     border-bottom: solid 10px #35436e;
 }
 .btn{
@@ -205,7 +207,7 @@ button>a{
     color: #35436e;
 }
 .team_member>img{
-    height: 47vh;
+    height: 35vh;
     margin: 5% 25%;
     border-radius: 100%;
     box-shadow: -5px -5px 5px gray;
@@ -247,9 +249,9 @@ button>a{
 
 .navbar {
     margin-bottom: 0;
-    background-color:gainsboro;
-    z-index: 9999;
-    border-bottom: solid 10px #92ae6f;
+    background-color:#fefefe;
+    opacity: 0.8;
+    border-bottom: solid 10px #35436e;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
@@ -318,6 +320,10 @@ button>a{
         text-align: center;
         margin: 25px 0;
     }
+    .carousel-inner .item{
+        height: 100vh;
+
+    }
     .btn-lg {
         width: 100%;
         margin-bottom: 35px;
@@ -336,9 +342,10 @@ button>a{
         height: 40vh;
         margin: 0 12%;
     }
-    /*.team_member>img{*/
-    /*margin: 10% 33%;*/
-    /*}*/
+    .top_logo{
+        margin: 0;
+        display: inline-block;
+    }
 
     #about{
         height: 120vh;
@@ -367,12 +374,15 @@ button>a{
 
 
 /* media query for mobile devices landscape */
-@media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
+/*@media screen and (max-width: 480px) {*/
+    /*!*.logo {*!*/
+        /*!*font-size: 150px;*!*/
+    /*!*}*!*/
+    /*!*.top_logo{*!*/
+        /*!*height: 10vh;*!*/
+    /*!*}*!*/
 
-}
+/*}*/
 
 /* media query for small devices like ipad or ipad pro */
 
@@ -381,6 +391,9 @@ button>a{
     /*height: 40vh;*/
     /*margin: 10% 28%;*/
     /*}*/
+    .our_page>h2{
+        margin-top: 70px;
+    }
     .service_offer_img{
         height: 28vh;
     }
@@ -389,7 +402,7 @@ button>a{
         margin-bottom: 10px;
     }
     .carousel-inner .item{
-        height: 90vh;
+        height: 100vh;
 
     }
     #about{

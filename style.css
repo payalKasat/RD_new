@@ -57,14 +57,14 @@ h5{
 }
 .our_page>h2{
     margin-top: 50px;
-    color: #fefefe;
+    color: #383a40;
     font-size: 70px;
-    text-shadow: 5px 5px 15px #000000;
+    text-shadow: 5px 5px 15px #efeeec;
 
 }
 .header{
-    color: #000000;
-    text-shadow: 5px 5px 5px #fefefe;
+    color:#383a40;
+    text-shadow: 5px 5px 5px #efeeec;
 }
 .our_page>h4>a{
     color: #fefefe;

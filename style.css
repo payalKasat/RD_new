@@ -19,12 +19,16 @@ h4 {
     margin-bottom: 10px;
 }
 h5{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.375em;
     font-weight: 400;
     margin-bottom: 10px;
 }
-
+.page-header{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
 .social_media{
     height: 40px;
     width: 40px;                 /* top social media style*/
@@ -32,7 +36,7 @@ h5{
 }
 
 .top_logo{
-    height: 7vh;
+    height: 4vh;
     /*#width: 70px;                 !* top logo style*!*/
     /*#border-radius: 100%;*/
     #margin: 2px;
@@ -49,7 +53,7 @@ h5{
 
 }
 .our_page{
-    top:10px;
+    top:100px;
 }
 .our_page>h2{
     margin-top: 50px;
@@ -249,14 +253,20 @@ button>a{
 
 .navbar {
     margin-bottom: 0;
+    padding: 0;
+    display: block;
     background-color:#fefefe;
-    opacity: 0.8;
+    z-index: 1;
+    #opacity: 0.8;
     border-bottom: solid 10px #35436e;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .contact_nav{
     margin-left: -20px;

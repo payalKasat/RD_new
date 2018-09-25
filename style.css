@@ -272,7 +272,7 @@ button>a{
     width: 100%;
 }
 .contact_nav{
-    margin-left:0;
+    margin-left: 45%;
 }
 .navbar li a, .navbar .navbar-brand {
     color: #35436e !important;
@@ -332,6 +332,9 @@ button>a{
 /* media query for mobile devices */
 
 @media screen and (max-width: 740px) {
+    .contact_nav{
+        margin: 0;
+    }
     .col-sm-4 {
         text-align: center;
         margin: 25px 0;

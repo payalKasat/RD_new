@@ -4,12 +4,15 @@ fbody {
     color: #818181;
     background-color:#fefefe;
 }
+.title{
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
 h2 {
     font-size: 38px;
     text-transform: uppercase;
     color: #35436e;  /* all h2 style*/
     font-weight: 600;
-    margin-bottom: 30px;
 }
 h4 {
     font-size: 28px;
@@ -71,11 +74,11 @@ h5{
     text-shadow: 3px 3px 3px #000000;
     font-weight: bolder;
 }
-/*.our_page>h4:hover{                         !*landing/ our page hover effect*!*/
-    /*text-decoration: underline;*/
-/*}*/
+
 .container-fluid {
-    padding: 60px 50px;
+    padding: 120px 50px 0 50px;
+    border-top: solid 1px #35436e;
+    border-bottom: solid 1px #35436e;
 }
 
 .logo-small {
@@ -95,8 +98,8 @@ h5{
     box-shadow: -5px -5px 15px black;
 }
 .about_us_page{
-    border-bottom: solid 10px #35436e;
-    border-top: solid 10px #35436e;
+    /*border-bottom: solid 10px #35436e;*/
+    /*border-top: solid 10px #35436e;*/
     background-color: #21242a;
     opacity: 0.9;
 }
@@ -151,13 +154,13 @@ p{
 }
 
 .service_offer{
-    border-bottom: solid 10px #35436e;
+    #border-bottom: solid 10px #35436e;
     margin-bottom: 10vh;
 }
 #testimonial{
     background-color: #9db67e;
-    border-top: solid 10px #35436e;
-    border-bottom: solid 10px #35436e;
+    /*border-top: solid 10px #35436e;*/
+    /*border-bottom: solid 10px #35436e;*/
 }
 #testimonial ul{
     display: inline-block;
@@ -190,9 +193,9 @@ p{
 /*.mobile_dropdown{*/
 /*visibility: hidden;*/
 /*}*/
-#blog{
-    border-bottom: solid 10px #35436e;
-}
+/*#blog{*/
+     /*border-bottom: solid 10px #35436e;*/
+ /*}*/
 button>a{
     color: white;
 }
@@ -205,7 +208,7 @@ button>a{
     border-radius: 20px;
 }
 #team{
-    padding-top: 65px;
+    padding-top: 120px;
 }
 .team_info>h3{
     color: #35436e;
@@ -258,7 +261,7 @@ button>a{
     background-color:#fefefe;
     z-index: 1;
     #opacity: 0.8;
-    border-bottom: solid 10px #35436e;
+    border-bottom: solid 5px #35436e;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 2px;
@@ -269,7 +272,7 @@ button>a{
     width: 100%;
 }
 .contact_nav{
-    margin-left: -20px;
+    margin-left:0;
 }
 .navbar li a, .navbar .navbar-brand {
     color: #35436e !important;
@@ -279,12 +282,15 @@ button>a{
     color:#fff !important;
     background-color: #35436e !important;
 }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-top: 1px solid darkgray;
+}
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
 }
 .navbar-right{
-    margin-top: 15px;
+    #margin-top: 15px;
 }
 #contact p{
     color: gainsboro;

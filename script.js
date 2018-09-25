@@ -20,7 +20,7 @@ $(document).ready(function(){
             // The optional number (2000) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 2000, function(){
+            }, 1000, function(){
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
@@ -33,7 +33,7 @@ $(document).ready(function(){
             var pos = $(this).offset().top;
 
             var winTop = $(window).scrollTop();
-            if (pos < winTop + 2000) {
+            if (pos < winTop + 1000) {
                 $(this).addClass("slide");
             }
         });

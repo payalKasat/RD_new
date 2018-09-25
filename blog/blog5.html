@@ -16,15 +16,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="blog_page.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
 </head>
 <body id="blog_page1 blog" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a href="/index.html">
-                <img class="top_logo img-responsive" src="blog_images/Original_transparent_1024_no_tagline%20-%20large%20canvas%20-%20white%20background%20(1).png">
-            </a>
-        </div>
+    <div class="page-header container">
+        <a href="#myPage" class="pull-left">
+            <img class="top_logo img-responsive" src="blog_images/Original_transparent_1024_no_tagline%20-%20large%20canvas%20-%20white%20background%20(1).png">
+        </a>
+        <h5 class="pull-right">Your Catalyst for Success in Microsoft Dynamics and Business Intelligence Projects</h5>
     </div>
 </nav>
 
@@ -181,20 +182,10 @@
         </div>
     </div>
 </div>
-<div id="contact" class="container-fluid">
-    <h2 class="text-center">CONTACT</h2>
+<div id="contact" class="container-fluid bg-grey text-center">
+    <h2 class="title">CONTACT</h2>
     <div class="row">
-        <div class="col-sm-5">
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
-            <ul class="contact_ul">
-                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
-                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
-            </ul>
-        </div>
-        <div class="col-sm-7 slideanim">
+        <div class="col-sm-12 ">
             <div class="row">
                 <div class="col-sm-6 form-group">
                     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -206,9 +197,20 @@
             <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
             <div class="row">
                 <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                    <button class="btn btn-success btn-lg center-block" type="submit">Send</button>
                 </div>
             </div>
+        </div>
+
+        <div class="col-sm-12">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 46 Windchime, Irvine, CA 92603, USA</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 949 529 1314</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> info@realdynamics.com</p>
+            <ul class="nav navbar-nav contact_nav ">
+                <li><a href="https://www.linkedin.com/company/real-dynamics/" target="_blank"><img class="social_media" src="blog_images/Linkedin-icon_original.png"></a></li>
+                <li><a href="https://twitter.com/realdynamics" target="_blank"><img class="social_media" src="blog_images/twitter-icon-original.png"></a></li>
+            </ul>
         </div>
     </div>
 </div>

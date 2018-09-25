@@ -31,6 +31,9 @@ body{
     border-color: transparent;
     color: #fff !important;
 }
+.contact_nav{
+    margin-left: 45%;
+}
 .top_logo{
     height: 7vh;
 }
